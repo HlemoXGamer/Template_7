@@ -1,0 +1,147 @@
+include Includes/variables
+include Includes/mixins
+doctype
+html(lang='en')
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title Document
+		include Includes/styles
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+	body
+		//- Header
+		header
+			.container
+				nav
+					.logo
+						img(src='./Media/logo.png')
+					i(class='fa-solid fa-bars fa-2x our-bars' id='our-bars')
+					ul.links#links
+						each item in ['Home','Services','Projects','Info','Contact']
+							li
+								a(href='#') #{item}
+
+		//- Landing
+		.landing 
+			.container 
+				.info 
+					h6 seo digital agency 
+					h2 Dive #[span into The SEO] World #[span With Tale]
+					p Tale is the best SEO agency website template using Bootstrap v5.2.2 CSS for your company. It is a free download provided by TemplateMo. There are 3 HTML pages, Home, About, and FAQ.
+					.buttons 
+						button Discover More 
+						span or 
+						button Check Our FAQs
+		
+		//- Services
+		.services 
+			.container 
+				.info 
+					.main-heading
+						h2 We Provide #[span Different Services] & #[span Features] For Your Agency
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.
+					.clear
+					.cards
+							.card 
+								img(src="./Media/services-01.jpg", alt="")
+								|
+								h2 Discover More on current SEO Trends
+							.card 
+								img(src="./Media/services-02.jpg", alt="")
+								|
+								h2 Real-Time Big Data Analysis
+							.card 
+								img(src="./Media/services-03.jpg", alt="")
+								|
+								h2 Precise Data Analysis & Prediction
+							.card 
+								img(src="./Media/services-04.jpg", alt="")
+								|
+								h2 SEO Marketing & Social Media
+		.slider 
+			.container 
+				.main-heading 
+					h2 Discover Our #[span Work ] & #[span Projects]
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.
+			.owl-carousel.owl-theme.owl-loaded
+				.owl-stage-outer
+					.owl-stage
+						.owl-item 
+							img(src="./Media/projects-01.jpg", alt="alt")
+							.down-link 
+								h4 HTML CSS Layouts For Your Websites
+								| 
+								a(href="") #[i.fa.fa-link]
+						.owl-item 
+							img(src="./Media/projects-02.jpg", alt="alt")
+							.down-link 
+								h4 Bootstrap 5 Themes For Free 
+								| 
+								a(href="") #[i.fa.fa-link]
+						.owl-item 
+							img(src="./Media/projects-03.jpg", alt="alt")
+							.down-link 
+								h4 Mobile Friendly Websites Layouts 
+								| 
+								a(href="") #[i.fa.fa-link]
+						.owl-item 
+							img(src="./Media/projects-04.jpg", alt="alt")
+							.down-link 
+								h4 Digital Agency HTML Templates
+								| 
+								a(href="") #[i.fa.fa-link] 
+		.about-us 
+			.container 
+				.content 
+						.bars
+							.main-heading
+								h2 More #[span About Us ] & What #[span We Offer]
+								p You are free to use this template for any purpose. You are not allowed to redistribute the downloadable ZIP file of Tale SEO Template on any other template website. Please contact us. Thank you.
+							.bar
+								h4 Media
+								.progress
+									span(style='width:90%;' value='90%') 
+							.bar
+								h4 Digital Marketing 
+								.progress
+									span(style='width:80%;' value='80%') 
+							.bar
+								h4 Social Media Managing 
+								.progress
+									span(style='width:95%;' value='95%')
+							.main-heading 
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers eiusmod tempor incididunt ut labore et dolore dolor dolor sit amet, consectetur adipiscing elit, sed doers eiusmod.
+		.contact-us 
+			.container 
+				.content
+					.main-heading 
+						h2 #[span Contact Us ] & Get In #[span Touch]
+					form(action="")
+						.wrap
+							input(type="text", placeholder='Your Name...')
+							input(type="text", placeholder="Your Surname...")
+						.wrap
+							input(type="text", placeholder="Your E-mail...")
+							input(type="text", placeholder="Subjects")
+						.wrap
+							textarea(placeholder='Your Message')
+						button Send Message Now
+					.form
+						.card
+							<i class="fa fa-phone"></i>
+							h4 010-020-0340
+						.card
+							<i class="fa fa-envelope"></i>
+							h4 info@company.com
+						.card
+							<i class="fa fa-map-marker"></i>
+							h4 Sunny Isles Beach, United States
+		footer 
+			.container
+				.content
+					p Copyright © 2036 Tale SEO Agency. All rights reserved.
+					p Design: TemplateMo
+		include Includes/Scripts

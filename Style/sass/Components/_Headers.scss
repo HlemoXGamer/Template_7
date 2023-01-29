@@ -1,0 +1,23 @@
+.main-heading{
+  h2{
+    color: #2a2a2a;
+    font-size: 30px;
+    margin: 0 0 30px;
+    line-height: 1.6;
+    padding: 0 50px 0 0;
+    position: relative;
+    span{ 
+      &:first-child{
+        color: $color1;
+      }
+      &:last-child{
+        color: $color2;
+      }
+    }
+  }
+  p{
+    color: #afafaf;
+    font-size: 15px;
+    margin: 0 0 30px;
+  }
+}

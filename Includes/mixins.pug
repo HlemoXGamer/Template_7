@@ -1,0 +1,9 @@
+mixin header(logo,...items)
+	header
+		div.container
+			nav
+				h2.logo #{logo}
+				ul.links
+					- var listItems = [...items]
+					each item in listItems
+						li #{item}
