@@ -31,6 +31,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .main-heading h2 {
@@ -369,6 +370,9 @@ header .container nav ul.links li a:hover {
     width: 100%;
     float: none;
   }
+  .services::before {
+    display: none;
+  }
 }
 .services .container .info .clear {
   clear: both;
@@ -613,6 +617,26 @@ header .container nav ul.links li a:hover {
   font-size: 32px;
   color: #fff;
   margin-bottom: 15px;
+}
+@media (max-width:620px) {
+  .contact-us .container .content form {
+    padding: 20px;
+  }
+  .contact-us .container .content form .wrap {
+    flex-direction: column;
+  }
+  .contact-us .container .content form input {
+    width: 94%;
+  }
+  .contact-us .container .content form textarea {
+    width: 94%;
+  }
+  .contact-us .container .content .form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }
 footer {
   padding-top: 30px;
